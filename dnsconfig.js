@@ -16,30 +16,57 @@ function getDomains(filepath) {
 	return domains;
 }
 
-function getInfo() {
-	
-}
-
 // -- -- //
 
 var domains = getDomains("./domains");
+var list = {};
 
-for (var domain in domains) {
-	var info = getInfo(domain);
-	D();
+for (let domain in domains) {
+	let info = domains[domain].data;
+	
+	list[domain.domain] = [];
+	
+	// A Records
+	if (domain.record.A) {
+		for (let i in domain.record.A) {
+			list[domain].push(A(domain.subdomain, domain.record.A[i], domain.proxied));
+		}
+	}
+	
+	// AAA Records
+	if (domain.record.AAA) {
+		for (let i in domain.record.AAA) {
+			list[domain].push(AAA(domain.subdomain, domain.record.AAA[i], domain.proxied));
+		}
+	}
+	
+	// CNAME Records
+	if (domain.record.CNAME) {	
+		list[domain].push(CNAME(domain.subdomain, domain.record.CNAME, domain.proxied));
+	}
+	
+	// MX Records
+	if (domain.record.MX) {
+		for (let i in domain.record.MX) {
+			list[domain].push(MX(domain.subdomain, 10, domain.record.MX[i]));
+		}
+	}
+	
+	// NS Records
+	if (domain.record.NS) {
+		for (let i in domain.record.NS) {
+			list[domain].push(NS(domain.subdomain, domain.record.NS[i]));
+		}
+	}
+	
+	// A Records
+	if (domain.record.TXT) {
+		for (let i in domain.record.TXT) {
+			list[domain].push(TXT(domain.subdomain, domain.record.TXT[i],));
+		}
+	}
 }
 
-/*
-D("sillybilly.club", reg_non, provider,
-	/// All the records
-	A("subdomain", "value"),
-	AAAA("subdomain", "value"),
-	CNAME("subdomain", "value"),
-	MX("subdomain", 10, "value"),
-	TXT("name", "message"),
-	NS("subdomain", "value")
-)
-
-
-
-*/
+for (let domain in list) {
+	D(domain, reg_non, provider, list[domain]);
+}
