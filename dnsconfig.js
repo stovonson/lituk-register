@@ -67,5 +67,5 @@ for (var domain in domains) {
 }
 
 for (var domain in list) {
-	D(domain, reg_non, provider, list[domain]);
+	D(domain, reg_none, provider, list[domain]);
 }
