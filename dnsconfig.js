@@ -24,7 +24,7 @@ var list = {};
 for (var domain in domains) {
 	var info = domains[domain].data;
 	
-	console.log(domains);
+	console.log(JSON.stringify(domains));
 	
 	list[info.subdomain] = [];
 	
