@@ -22,10 +22,7 @@ var domains = getDomains("./domains");
 var list = {};
 
 for (var domain in domains) {
-	var info = domains[domain].data;
-	
-	console.log(JSON.stringify(domains));
-	
+	var info = domains[domain];
 	list[info.subdomain] = [];
 	
 	// A Records
