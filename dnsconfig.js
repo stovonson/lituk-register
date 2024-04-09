@@ -24,45 +24,45 @@ var list = {};
 for (var domain in domains) {
 	var info = domains[domain].data;
 	
-	list[domain.domain] = [];
+	list[info.domain] = [];
 	
 	// A Records
-	if (domain.record.A) {
-		for (var i in domain.record.A) {
-			list[domain].push(A(domain.subdomain, IP(domain.record.A[i]), domain.proxied));
+	if (info.record.A) {
+		for (var i in info.record.A) {
+			list[info.domain].push(A(info.subdomain, IP(info.record.A[i]), info.proxied));
 		}
 	}
 	
 	// AAA Records
-	if (domain.record.AAA) {
-		for (var i in domain.record.AAA) {
-			list[domain].push(AAA(domain.subdomain, domain.record.AAA[i], domain.proxied));
+	if (info.record.AAA) {
+		for (var i in info.record.AAA) {
+			list[info.domain].push(AAA(info.subdomain, info.record.AAA[i], info.proxied));
 		}
 	}
 	
 	// CNAME Records
-	if (domain.record.CNAME) {	
-		list[domain].push(CNAME(domain.subdomain, domain.record.CNAME, domain.proxied));
+	if (info.record.CNAME) {	
+		list[info.domain].push(CNAME(info.subdomain, info.record.CNAME, info.proxied));
 	}
 	
 	// MX Records
-	if (domain.record.MX) {
-		for (var i in domain.record.MX) {
-			list[domain].push(MX(domain.subdomain, 10, domain.record.MX[i]));
+	if (info.record.MX) {
+		for (var i in info.record.MX) {
+			list[info.domain].push(MX(info.subdomain, 10, info.record.MX[i]));
 		}
 	}
 	
 	// NS Records
-	if (domain.record.NS) {
-		for (var i in domain.record.NS) {
-			list[domain].push(NS(domain.subdomain, domain.record.NS[i]));
+	if (info.record.NS) {
+		for (var i in info.record.NS) {
+			list[info.domain].push(NS(info.subdomain, info.record.NS[i]));
 		}
 	}
 	
 	// A Records
-	if (domain.record.TXT) {
-		for (var i in domain.record.TXT) {
-			list[domain].push(TXT(domain.subdomain, domain.record.TXT[i]));
+	if (info.record.TXT) {
+		for (var i in info.record.TXT) {
+			list[info.domain].push(TXT(info.subdomain, info.record.TXT[i]));
 		}
 	}
 }
