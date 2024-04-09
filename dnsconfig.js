@@ -1,6 +1,6 @@
 // DNS Configuration
 
-var reg_none = NewRegister("none");
+var reg_none = NewRegistrar("none");
 var provider = DnsProvider(NewDnsProvider("cloudflare"));
 
 // -- Functions -- //
