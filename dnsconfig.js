@@ -21,21 +21,21 @@ function getDomains(filepath) {
 var domains = getDomains("./domains");
 var list = {};
 
-for (let domain in domains) {
-	let info = domains[domain].data;
+for (var domain in domains) {
+	var info = domains[domain].data;
 	
 	list[domain.domain] = [];
 	
 	// A Records
 	if (domain.record.A) {
-		for (let i in domain.record.A) {
+		for (var i in domain.record.A) {
 			list[domain].push(A(domain.subdomain, IP(domain.record.A[i]), domain.proxied));
 		}
 	}
 	
 	// AAA Records
 	if (domain.record.AAA) {
-		for (let i in domain.record.AAA) {
+		for (var i in domain.record.AAA) {
 			list[domain].push(AAA(domain.subdomain, domain.record.AAA[i], domain.proxied));
 		}
 	}
@@ -47,26 +47,26 @@ for (let domain in domains) {
 	
 	// MX Records
 	if (domain.record.MX) {
-		for (let i in domain.record.MX) {
+		for (var i in domain.record.MX) {
 			list[domain].push(MX(domain.subdomain, 10, domain.record.MX[i]));
 		}
 	}
 	
 	// NS Records
 	if (domain.record.NS) {
-		for (let i in domain.record.NS) {
+		for (var i in domain.record.NS) {
 			list[domain].push(NS(domain.subdomain, domain.record.NS[i]));
 		}
 	}
 	
 	// A Records
 	if (domain.record.TXT) {
-		for (let i in domain.record.TXT) {
-			list[domain].push(TXT(domain.subdomain, domain.record.TXT[i],));
+		for (var i in domain.record.TXT) {
+			list[domain].push(TXT(domain.subdomain, domain.record.TXT[i]));
 		}
 	}
 }
 
-for (let domain in list) {
+for (var domain in list) {
 	D(domain, reg_non, provider, list[domain]);
 }
