@@ -22,9 +22,12 @@ var domains = getDomains("./domains");
 var list = {};
 
 for (var domain in domains) {
-	var info = domains[domain].data;
-	
-	list[info.subdomain] = [];
+	try {
+		var info = domains[domain].data;
+		list[info.subdomain] = [];
+	} catch (error) {
+		console.error(error);
+	}
 	
 	// A Records
 	if (info.record.A) {
