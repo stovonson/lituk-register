@@ -27,7 +27,7 @@
 	}
 	
 	"record": {
-		"A": ["example", "0.0.0.0"],
+		"A": ["0.0.0.0"],
 		"AAAA": ["::1", "::2"],
 		"CNAME": "example.com",
 		"MX": ["mx1.example.com", "mx2.example.com", "mx3.example.com"],

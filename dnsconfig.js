@@ -29,7 +29,7 @@ for (let domain in domains) {
 	// A Records
 	if (domain.record.A) {
 		for (let i in domain.record.A) {
-			list[domain].push(A(domain.subdomain, domain.record.A[i], domain.proxied));
+			list[domain].push(A(domain.subdomain, IP(domain.record.A[i]), domain.proxied));
 		}
 	}
 	
