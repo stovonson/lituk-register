@@ -67,9 +67,5 @@ for (var domain in domains) {
 }
 
 for (var domain in list) {
-	try {
-		D(domain, reg_none, provider, list[domain]);
-	} catch (error) {
-		console.error(error);
-	}
+	D(domain, reg_none, provider, list[domain]);
 }
