@@ -11,5 +11,5 @@
         "CNAME": "sillybilly-boo.github.io."
 	},
 
-	"proxied": true
+    "proxied": false
 }
