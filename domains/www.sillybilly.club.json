@@ -1,0 +1,15 @@
+{
+    "subdomain": "www",
+	"description": "Root",
+	"owner": {
+		"email": "club@sillybilly.boo",
+		"github": "SillyBilly-Boo",
+		"repo": "SillyBilly-Boo/sillybilly.boo"
+	},
+
+	"record": {
+        "CNAME": "sillybilly-boo.github.io"
+	},
+
+	"proxied": true
+}
