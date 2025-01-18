@@ -27,7 +27,9 @@ var list = {};
 
 for (var domain in domains) {
 	var info = domains[domain];
-    list[base] = [];
+    if (!list[base]) {
+        list[base] = [];
+    }
 
 	// Proxy
 	var proxied = proxy.on;
@@ -77,6 +79,5 @@ for (var domain in domains) {
 }
 
 for (var domain in list) {
-    console.log(domain);
 	D(domain, reg_none, provider, list[domain]);
 }
