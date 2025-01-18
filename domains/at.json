@@ -1,0 +1,15 @@
+{
+	"subdomain": "at",
+	"description": "My personal forwarder for local webpages",
+	"owner": {
+		"email": "florian@egelhofer.net",
+		"github": "mcsurfi",
+		"repo": "mcsurfi/sillybilly.club"
+	},
+
+	"record": {
+		"NS": ["ns1.he.net", "ns2.he.net", "ns3.he.net", "ns4.he.net", "ns5.he.net"]
+	},
+
+	"proxied": false
+}
