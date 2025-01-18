@@ -25,7 +25,7 @@
 	},
 
 	"record": {
-		"A": ["0.0.0.0"],
+		"A": ["0.0.0.0", "0.0.0.0"],
 		"CNAME": "example.com.",
 		"TXT": ["verification_example", "000000000"]
 	},
