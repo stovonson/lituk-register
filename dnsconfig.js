@@ -76,6 +76,8 @@ for (var domain in domains) {
 	}
 }
 
+console.log("Domans: " + list.length);
+
 for (var domain in list) {
 	D(domain, reg_none, provider, list[domain]);
 }
