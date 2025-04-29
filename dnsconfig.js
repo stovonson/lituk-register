@@ -73,9 +73,9 @@ for (var domain in domains) {
 	// A Records
 	if (info.record.TXT) {
 		for (var i in info.record.TXT) {
-            list[base].push(TXT(info.record.TXT[i][0] + info.subdomain, info.record.TXT[i][1]));
+            list[base].push(TXT(info.record.TXT[i][0] + ((info.subdomain == "@") ? '' : info.subdomain), info.record.TXT[i][1]));
 		}
-	}
+    }
 }
 
 for (var domain in list) {
