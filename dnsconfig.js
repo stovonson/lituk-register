@@ -6,7 +6,7 @@ var proxy = {
   "on": { "cloudflare_proxy": "on" },
   "off": { "cloudflare_proxy": "off" }
 }
-var base = "lives-in-the.uk";
+var base = "lives-in-the.uk.";
 
 // -- Functions -- //
 
