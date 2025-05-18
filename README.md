@@ -1,6 +1,7 @@
 # lives-in-the.uk (LITUK)
 
 lives-in-the.uk is a free subdomain service that tells everyone you know what a chippy is.
+I've made an [example](https://chippy.lives-in-the.uk/) of what you can host on here!
 
 ## Register
 
@@ -32,3 +33,5 @@ lives-in-the.uk is a free subdomain service that tells everyone you know what a 
 5. After the pull request is merged, please wait up to at least 24 hours for the changes to propagate.
 
 ---
+
+Thanks to [sillybilly.club](https://github.com/SillyBilly-Boo/sillybilly.club) for the original code.
