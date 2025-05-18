@@ -2,16 +2,13 @@
 	"subdomain": "@",
 	"description": "Root",
 	"owner": {
-		"email": "club@sillybilly.boo",
-		"github": "SillyBilly-Boo",
-		"repo": "SillyBilly-Boo/sillybilly.boo"
+		"email": "stovonson@gmail.com",
+		"github": "stovonson",
+		"repo": "stovonson/lituk-register"
 	},
 
 	"record": {
-		"A": ["185.199.108.153", "185.199.109.153", "185.199.110.153", "185.199.111.153"],
-		"TXT": [
-			["_github-pages-challenge-SillyBilly-Boo", "990d21626b263278e4677419212027"]
-		]
+		"A": "76.76.21.21"
 	},
 
 	"proxied": true

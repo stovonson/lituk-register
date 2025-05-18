@@ -1,18 +1,10 @@
-# SillyBilly.Club
+# lives-in-the.uk (LITUK)
 
-*SillyBilly.Club* is a free subdomain service that allows one to show the world how silly they are.
-
-## Features
-
-| Features | sillybilly.club |
-|:--- |:---:|
-| SSL/TLS * | ✅ |
-| Enforced HTTPS * | ✅ |
-> `*` Only available when proxying is enabled.
+lives-in-the.uk is a free subdomain service that tells everyone you know what a chippy is.
 
 ## Register
 
-1. [Fork](https://github.com/SillyBilly-Boo/sillybilly.club/fork) this repository.
+1. [Fork](https://github.com/stovonson/lituk-register/fork) this repository.
 2. Create a file named `example.json` in the `domains` folder (`example` being the subdomain name).
 3. Fill this file with your subdomain information. Please make sure your syntax is valid and follow this format:
 ```json

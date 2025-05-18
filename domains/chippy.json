@@ -1,0 +1,15 @@
+{
+	"subdomain": "chippy",
+	"description": "An example of something you can host on lituk.",
+	"owner": {
+		"email": "stovonson@gmail.com",
+		"github": "stovonson",
+		"repo": "stovonson/lituk-register"
+	},
+
+	"record": {
+		"CNAME": "v0-stovonson-s-happy-site-13kdl8ehz-t89.vercel.app"
+	},
+
+	"proxied": false
+}

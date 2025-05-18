@@ -2,13 +2,13 @@
     "subdomain": "www",
     "description": "WWW",
 	"owner": {
-		"email": "club@sillybilly.boo",
-		"github": "SillyBilly-Boo",
-		"repo": "SillyBilly-Boo/sillybilly.boo"
+		"email": "stovonson@gmail.com",
+		"github": "stovonson",
+		"repo": "stovonson/lituk-register"
 	},
 
 	"record": {
-        "CNAME": "sillybilly-boo.github.io."
+        "CNAME": "cname.vercel-dns.com"
 	},
 
     "proxied": false
