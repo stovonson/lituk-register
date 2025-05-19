@@ -9,8 +9,8 @@ If you want to register a subdomain, please go to [the documentation](https://gi
 | Free              | Pro            |
 |-------------------|----------------|
 | 5 subdomains      | 25 subdomains  |
-| no priority queue | priority queue |
-| 3+ letters only   | any length     |
+| No priority queue | Priority queue |
+| 3+ letters only   | Any length     |
 
 You can get Pro by subscribing to any Ko-Fi/Patreon tier, and putting that email in your json file.
 
