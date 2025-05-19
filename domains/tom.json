@@ -1,0 +1,15 @@
+{
+	"subdomain": "tom",
+	"description": "I take photos and turn them into art.",
+	"owner": {
+		"email": "contact@tomstuff.uk",
+		"website": "https://pics.tomstuff.uk/",
+    "unsplash": "https://unsplash.com/@tomtakespics"
+	},
+
+	"record": {
+		"CNAME": "tomstuff.uk."
+	},
+
+	"proxied": true
+}
