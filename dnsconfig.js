@@ -39,8 +39,12 @@ for (var domain in domains) {
 
 	// A Records
 	if (info.record.A) {
-		for (var i in info.record.A) {
-			list[base].push(A(info.subdomain, IP(info.record.A[i]), proxied));
+		if (Array.isArray(info.record.A)) {
+			for (var i in info.record.A) {
+				list[base].push(A(info.subdomain, IP(info.record.A[i]), proxied));
+			}
+		} else {
+			list[base].push(A(info.subdomain, IP(info.record.A), proxied));
 		}
 	}
 
