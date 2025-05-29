@@ -4,12 +4,12 @@
 	"owner": {
 		"email": "contact@tomstuff.uk",
 		"website": "https://pics.tomstuff.uk/",
-    "unsplash": "https://unsplash.com/@tomtakespics"
+                "unsplash": "https://unsplash.com/@tomtakespics"
 	},
 
 	"record": {
 		"CNAME": "redirect.tomstuff.uk."
 	},
 
-	"proxied": true
+	"proxied": false
 }
