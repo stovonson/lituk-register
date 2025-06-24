@@ -2,7 +2,7 @@
 
 ## Register
 
-If you want to register a subdomain, please go to [the documentation](https://github.com/stovonson/lituk-register/wiki/Register-a-domain) for an in-depth guide.
+If you want to register a subdomain, please go to [the documentation](https://github.com/stovonson/lituk-register/wiki/Domain-Help#registering-a-domain) for an in-depth guide.
 
 ## Support
 
