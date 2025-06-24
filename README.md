@@ -4,15 +4,10 @@
 
 If you want to register a subdomain, please go to [the documentation](https://github.com/stovonson/lituk-register/wiki/Domain-Help#registering-a-domain) for an in-depth guide.
 
-## Support
+## Rules
 
-| Free              | Pro            |
-|-------------------|----------------|
-| 5 subdomains      | 25 subdomains  |
-| No priority queue | Priority queue |
-| 3+ letters only   | Any length     |
-
-You can get Pro by subscribing to any Ko-Fi/Patreon tier, and putting that email in your json file.
+- 1 subdomain per user
+- 3+ letters only
 
 ## Other
 
